@@ -1,3 +1,6 @@
+**Documentation**
+Run the command line "npm install" to install the packages used.
+Run "npx nodemon index.js" or "node index.js" or "nodemon index.js" command line to run the project.
 ![1](https://user-images.githubusercontent.com/33697532/151890753-f5ba8900-3e67-46e4-af34-b38cd65ad02c.jpg)
 ![2](https://user-images.githubusercontent.com/33697532/151890762-3d6730d9-e0d3-41e2-9249-1d83edb190bb.jpg)
 ![3](https://user-images.githubusercontent.com/33697532/151890768-f09149d8-aedb-45cc-a52c-2e300eee7d55.jpg)
