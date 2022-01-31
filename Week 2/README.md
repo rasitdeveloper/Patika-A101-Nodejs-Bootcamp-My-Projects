@@ -1,50 +1,8 @@
-# JavaScript nedir, TypeScript nedir, arasındaki farklar nelerdir ?
-JavaScript, geliştiricilerin web uygulamaları, masaüstü uygulamaları, hibrit mobil uygulamaları, sunucular geliştirirken daha dinamik etkileşimler oluşturmak için yaygın olarak kullandıkları bir programlama dilidir. Topluluklar tarafından yaygın olarak kullanıldı ve çok büyük bir gelişme gösterdi. Ancak JavaScript büyürken JavaScript kodu karmaşık ve ağır hale geldi. Sonuç olarak nesne yönelimli bir programlama dilinin gereksinimlerini tam olarak karşılayamadı. Ayrıca JavaScript'de derleme aşaması yoktu ve hata kontrolü zor yapılıyordu. TypeScript bu ihtiyaçlara cevap verebilmek ve JavaScript’in büyük, karmaşık projelerde daha etkili şekilde kullanılabilmesini sağlamak için tasarlandı. TypeScript, nesne yönelimli ve derlenebilir bir programlama dilidir. JavaScript’in tüm özelliklerini içinde barındırmasının yanısıra ek özelliklerede sahiptir.
-
-# Farkları
-- TypeScript, nesne yönelimli bir programlama diliyken, JavaScript bir betik dilidir.
-- JavaScript, verileri dinamik olarak tanıyabiliyorken, TypeScript statik veri yapısına sahiptir, 
-- JavaScript kodu derlenmezken, TypeScript kodu derlenir.
-
-
-# Nodejs ile web sunucu oluşturma
-##### Express ile web sunucusu kurmak için:
-Öncelikle package.json dosyasının oluşturulması gerekir bunun için terminal ekranına "npm init" komutu yazılır.
-Daha sonra express paketini indirmek için terminale "npm i express" komutu yazılır.
-Sunucunun çalışabilmesi için aşağıdaki kodlar yazılabilir. Daha detaylı bilgi için "https://www.npmjs.com/package/express" adresi ziyaret edilebilir.
-> const express = require('express')
->
-> const app = express()
->
-> app.get('/', function (req, res) {
->   res.send('Hello World')
-> })
->
-> app.listen(3000)
-
-&nbsp;
-##### HTTP modülü ile web sunucusu kurmak için:
-"http" modülü, Node.js'in çekirdek modüllerinden biri olduğu için npm kullanarak indirmeye gerek yoktur. Aşağıda ki şekilde kullanılabilir. Daha detaylı bilgi için "https://nodejs.org/api/http.html" sayfası ziyaret edilebilir.
-> const http = require("http");
->
-> const server = http.createServer((req, res) => {
->    
->  const url = req.url;
->
->  if (url === "/") {
->    res.writeHead(200, { "Content-Type": "text/html" });
->
->    res.write("INDEX SAYFASI");
->  }
->
->  res.end();
->});
->
->const port = 3000;
->server.listen(port, () => {
->  console.log(`Sunucu port ${port} de başlatıldı.`);
->});
-
-&nbsp;
-##### Eğer açık kaynak kodlu bir projenin bilgisayarımızda çalışması isteniyorsa:
-Terminale "npm install" komutu yazılır ve package.json dosyasındaki dependencies altındaki bütün çalışma paketlerini indirilir, node.modules dosyası oluşturulur. Böylece proje çalışmaya hazır hale getirilir.
+![1](https://user-images.githubusercontent.com/33697532/151890753-f5ba8900-3e67-46e4-af34-b38cd65ad02c.jpg)
+![2](https://user-images.githubusercontent.com/33697532/151890762-3d6730d9-e0d3-41e2-9249-1d83edb190bb.jpg)
+![3](https://user-images.githubusercontent.com/33697532/151890768-f09149d8-aedb-45cc-a52c-2e300eee7d55.jpg)
+![4](https://user-images.githubusercontent.com/33697532/151890770-a82cc72f-ec93-4d94-858a-d3672ca27414.jpg)
+![5](https://user-images.githubusercontent.com/33697532/151890776-a2365f48-1c66-45f3-8426-486a485ab1c5.jpg)
+![6](https://user-images.githubusercontent.com/33697532/151890782-dcdb2294-b13b-404b-b8c0-449b9f029b3a.jpg)
+![7](https://user-images.githubusercontent.com/33697532/151890788-bb3413bf-dd61-4dbd-8049-e96ca0eead00.jpg)
+![8](https://user-images.githubusercontent.com/33697532/151890799-0e5d7d95-1107-4965-aa6a-db5f66c05105.jpg)
