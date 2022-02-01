@@ -1,6 +1,6 @@
 const axios = require('axios'); // package definition that will allow us to request freely on the internet
 
-exports.fetch = async () => { // fetch function returns brands
+exports.fetchBrands = async () => { // fetch function returns brands
     const response = await axios.get('https://api.trendyol.com/sapigw/brands');
     return response.data;
 }
@@ -20,7 +20,7 @@ exports.singleFetchBrand = async (brandName) => { // the singleFetchBrand functi
     } catch {
         return {
             status: false,
-            message: "Boyle bir kayit mevcut degilx"
+            message: "No such data is exist"
         }
     }
     
@@ -37,7 +37,7 @@ exports.singleFetchCategory = async (categoryId) => { // singleFetchCategory fun
     } catch {
         return {
             status: false,
-            message: "Boyle bir kayit mevcut degilx"
+            message: "No such data is exist."
         }
     }
     
