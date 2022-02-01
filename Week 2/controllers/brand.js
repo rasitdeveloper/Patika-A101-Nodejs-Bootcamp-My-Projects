@@ -1,7 +1,7 @@
 const brandService = require('../services/brand'); // definition required to use functions in brandService
 
-exports.fetchBrand = async (req,res) => { // the fetch function in brandService will work and a response will be returned to us, within this response the brands will be returned
-    const response = await brandService.fetch();
+exports.fetchBrands = async (req,res) => { // the fetch function in brandService will work and a response will be returned to us, within this response the brands will be returned
+    const response = await brandService.fetchBrands();
     res.send({
         status: true,
         data: response.brands
